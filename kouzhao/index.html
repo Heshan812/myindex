@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./css/langdunkeji.css">
+		<link rel="stylesheet" type="text/css" href="./css/swiper-4.3.3.min.css"/>
+		<title>首页</title>
+	</head>
+	<body>
+		<div class="index_content">
+			<div class="top_nav">
+				<div class="top_content">
+					<div class="top_logo">
+						<img src="./img/logo.png" alt="">
+					</div>
+					<div class="top_list">
+						<ul>
+							<li>
+								<a href="index.html" class="active">首页</a>
+							</li>
+							<li>
+								<a href="pc/about_us.html">关于我们</a>
+							</li>
+							<li>
+								<a href="pc/company_product.html">公司产品</a>
+							</li>
+							<li>
+								<a href="pc/contact_us.html">联系我们</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="banner_img">
+				<div class="swiper-container " >
+					<div class="swiper-wrapper"></div>
+					<!-- 如果需要分页器 -->
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<div class="product_presentation">
+				<img src="./img/img1.png" alt="">
+			</div>
+			<div class="product_list">
+				<div class="product_li">
+					<ul>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="company_introduction">
+				<div class="diva">
+					<div class='company_name'>
+						公司介绍
+					</div>
+					<div class="introduction">
+						<p>湖南朗盾科技有限公司是一家专业从事医疗卫生、医疗器械、健康防护用品的高科技生产型企业，
+						集现代医疗及个人防护产品的研发、设计、生产、销售于一体，专注健康防护、医疗防护、医疗器械设施设备产品等多个领域。
+						立志打造成国内一流的医疗及个人防护全方位产品链的综合生产及服务提供商。
+						</p>
+						<p>公司地址位于湖南省永州市双牌县，地理位置优越，交通方便，且已建成近四万方的现代化大型生产厂房，
+						设有多个无菌化生产车间及​22条医疗及个人防护用品高科技自动化生产线。主要产品涉及医疗科技设备、一次性医用外科口罩、一次性医用防护服、KN95系列等。
+					    公司严格按照国家有关质量标准执行准则和要求，坚持专注生产、用心服务的理念，
+					    以一流的工艺技术、全自动化高科技生产线、高素质人才配备及​完善的质量管控体系来提升产品的质量和服务，满足广大客户朋友的需求。
+					    </p>
+					</div>
+					<div class="examine">
+						<a href="pc/about_us.html">查看更多</a>
+					</div>
+				</div>
+			</div>
+			<div class="company_mien content_us">
+				<div class='about_us_title'>
+					<img src="./img/mien_img.png" alt="">
+				</div>
+				<div class="mien_img">
+					<img src="./img/about_usb.png" alt="">
+				</div>
+			</div>
+			<div class="html_bottom">
+				<div class="htmla">
+					<ul>
+						<li>
+							<img src="./img/img7.png" alt="">
+							<span>7x24小时</span>
+						</li>
+						<li>
+							<img src="./img/img6.png" alt="">
+							<span>专业化团队</span>
+						</li>
+						<li>
+							<img src="./img/img3.png" alt="">
+							<span>企业级SaaS</span>
+						</li>
+					</ul>
+				</div>
+				<div class="line"></div>
+				<div class="htmlb">
+					<div class="bottom_logo">
+						<img src="./img/logo1.png" >
+					</div>
+					<div class="small_title">
+						<span>关于我们</span>|
+						<span>服务协议</span>|
+						<span>隐私政策</span>|
+						<span>联系我们</span>|
+						<span>意见反馈</span>
+					</div>
+				</div>
+				<div class="htmlc">
+					<div class="ewm">
+						<img src="./img/ewm.png" alt="">
+					</div>
+					<div class="small_titlea">
+						<div class="titleone">反馈建议：123456789@163.com</div>
+						<div class="titleone">咨询热线：123456789</div>
+						<div class="titleone">联系地址：湖南省永州市双牌县</div>
+					</div>
+				</div>
+				<div class="htmld">
+					<div>Copyright © 2016-2019包图网信息科技有限公司 | 粤ICP备16096177号 深圳市市场监督管理局企业主体身份公示</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/swiper-4.3.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">				
+			function banner(){
+				var imgs=[
+					{img:"./img/banner.png"},
+					{img:"./img/banner_img.jpg"},
+					{img:"./img/banner_img1.jpg"}
+				];
+				for(var imga of imgs){
+					var imgb=imga.img;
+					var li;
+					li="<div class='swiper-slide'>"+						
+							"<img src='"+imgb+"'>"+          						
+					   "</div>";
+					   $(".swiper-wrapper").append(li);
+				}
+			}
+			banner();
+			var mySwiper = new Swiper ('.swiper-container', {			
+			        // 轮播图的方向，也可以是vertical方向			
+			        direction:'horizontal',			
+			        //播放速度			
+			        loop: true,			
+			        // 自动播放时间			
+			        autoplay:true,			
+			        // 播放的速度			
+			        speed:2000,			
+			        // 如果需要分页器，即下面的小圆点			
+			      pagination: {			
+			            el: '.swiper-pagination',			
+			      },			
+			　　// 这样，即使我们滑动之后， 定时器也不会被清除			
+			　　autoplayDisableOnInteraction : false,			
+			      });
+				 function productimg(){
+					 var productimg=[
+					 	{img:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1583299033385&di=0f5896b37d68c6edc24b42500bda47d8&imgtype=0&src=http%3A%2F%2Fimg001.hc360.cn%2Fhb%2FMTQ1OTQ4NTQwMjkyNS0zNzkzODk0MDk%3D.jpg",title:"N95"},
+						{img:"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=819953589,2378956144&fm=11&gp=0.jpg",title:"医用一次性"},
+						{img:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1583298796307&di=b1b417be72c93a135dd5ff8d3b318cd3&imgtype=0&src=http%3A%2F%2Fimgrt.pchouse.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fhouselib%2F1503%2F18%2Fc11%2Fspcgroup%2F4066965_1426679916468_500x500.jpg',title:"3M"},
+						{img:"http://0.image.kw.okbuycdn.com/images/multipic/4/20180509/b2a14a1c58e2787de56a0c6755ff2981.jpg",title:"防尘口罩"}
+					 ]
+					 for(var imga of productimg){
+						 var imgab=imga.img;
+						 var title=imga.title;
+						 var lis;
+						 lid="<li>"+
+							"<img src='"+imgab+"'>"+
+							"<div>"+title+"</div>"+
+						 "</li>";
+						 $(".product_li ul").append(lid);
+						 $(".product_li ul li").click(function(){
+						 	window.location.href="pc/company_product.html";
+						 })
+					 }
+				 }
+				 productimg();
+		</script>
+	</body>
+</html>

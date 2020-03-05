@@ -1,0 +1,426 @@
+body{
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-autospace: none;
+}
+.index_content{
+	width: 100%;
+	height: 100%;
+}
+.my_top{
+	width: 100%;
+	height: 2rem;
+	background: #2D294C;
+	display: flex;
+	flex-direction: row;
+}
+.top_logo{
+	width: 30%;
+	text-align: center;
+}
+.top_logo img{
+	width: 5.675rem;
+	height: 1.2rem;
+	vertical-align: middle;
+}
+.active{
+	border-bottom: 2px solid #fff;
+	margin-top: -10px;
+}
+.top_mune{	
+	width: 70%;
+}
+.top_mune li{
+	float: left;
+	width: 20%;	
+	height: 100%;
+	text-align: center;
+
+}
+.top_mune li a{
+	color: #fff;
+	font-size: 0.6rem;
+	text-decoration: none;
+}
+.banner_img{
+	width: 100%;
+	height: 10.9rem;
+}
+.swiper-container{
+	width: 100%;
+	height: 10.9rem;
+}
+.swiper-slide{
+    width: 100%;
+    height: 10.9rem;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+.product_presentation{
+	width: 100%;
+	height: 5.6rem;
+	line-height:5.6rem;
+	text-align: center;
+}
+.product_presentation img{	
+	vertical-align: middle;
+	width: 30%;
+}
+.product_list{
+	width: 100%;
+	height:9rem;
+	background:rgba(248,248,248,1);
+	padding-top: 1.5rem;
+}
+.product_li{
+	width: 80%;
+	margin-left: 10%;	
+}
+.product_li li{
+	width:33.33%;
+	height:5.65rem;
+	float: left;
+	text-align: center;
+	margin-bottom: 1.5rem;
+	
+}
+.product_li li img{
+	width: 90%;
+	margin-left: 5%;
+	height:100%;
+	border-radius: 6px;
+}
+.product_li li div{
+	font-size: 0.8rem;
+	color: #666;
+}
+.company_introduction{
+	margin-top: 1.5rem;
+	width: 100%;
+	height: 9rem;
+	background: url(../imgs/bg_img.png) no-repeat;
+	background-size: 100% 100%;
+	color: #fff;	
+}
+.company_mien>.about_us_title{
+	margin-bottom: 0.2rem;
+}
+.diva{
+	padding: 0.5rem 1.5rem 0.5rem 1rem;
+}
+.company_name{
+	font-size: 0.8rem;
+	margin-top: 0.5rem;
+}
+.introduction{
+	margin-top: 0.5rem;
+	width: 50%;
+	font-size: 0.5rem;
+}
+.mien_img{
+	width: 70%;
+	margin-left: 15%;
+}
+.mien_img img{
+	width: 100%;
+	height: 100%;
+}
+.content_us{
+	width: 100%;
+	margin: 1rem 0;
+}
+.about_us_title{
+	width: 100%;
+	text-align: center;
+}
+.about_us_title img{
+	width: 20%;
+}
+.html_bottom{
+	width: 100%;
+	height: 11rem;
+	background: #1E2635;
+}
+.htmla{
+	width: 80%;
+	height: 2.75rem;
+	line-height: 2.75rem;
+    color: #fff;
+	margin-left: 10%;		
+}
+.line{
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	opacity:0.2;
+}
+.htmla img{
+	vertical-align: middle;
+	margin-right: 0.25rem;
+	width: 0.8rem;
+	height: 0.8rem;
+}
+.htmla li{
+	float: left;
+	width: 33.33%;
+	text-align: center;
+	font-size: 0.5rem;
+}
+.htmlb{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	color: #fff;
+	
+}
+.bottom_logo{
+	width: 30%;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: right;
+	margin-right: 5%;
+}
+.small_title{
+	width: 70%;
+	margin-top:1rem;
+	
+}
+.small_title span{
+	font-size: 0.5rem;
+	border-right: 1px solid #fff;
+	padding: 0 0.3rem 0 0.2rem;
+}
+.small_title span:last-child{
+	border: none;
+}
+.bottom_logo img{
+	width: 2rem;
+	height: 2rem;
+	vertical-align: middle;
+}
+.htmlc{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	color: #fff;
+}
+.ewm{
+	width: 40%;
+	text-align: right;
+	
+}
+.ewm img{
+	width: 2.5rem;
+	height: 2.5rem;
+	vertical-align: middle;
+	margin-top: 0.2rem;
+}
+.small_titlea{
+	width: 60%;
+	margin-left: 0.5rem;
+	font-size: 0.5rem;
+}
+.htmld{
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	opacity: 0.2;
+	font-size: 0.5rem;
+	margin-top:1rem;
+}
+.us_bg{
+	width: 100%;
+	height: 31rem;
+	background: url(../imgs/us_bg.png)no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.tell_us{
+	color: #fff;
+	text-align: right;
+	margin-right: 10%;
+	padding-top: 20%;
+	letter-spacing: 2px;
+}
+.tell_type{
+	color: #fff;
+	position: absolute;
+	top:60%;
+	left: 30%;
+	line-height: 2rem;
+	font-size: 0.7rem;
+}
+.tell_type img{
+	width: 0.85rem;
+	height: 0.85rem;
+	vertical-align: middle;
+}
+.tow_img img{
+	width: 0.825rem;
+	height: 0.675rem;
+}
+.three_img img{
+	width: 0.8rem;
+	height: 1rem;
+}
+.content_us{
+	width: 100%;
+	margin: 1rem 0;
+}
+.about_us_title{
+	width: 100%;
+	text-align: center;
+}
+.about_us_title img{
+	width: 30%;
+}
+.lines{
+	margin-top: 0.5rem;
+	width: 70%;
+	margin-left: 15%;
+	height: 4px;
+	border-bottom: 1px dashed #2D294C;
+	margin-bottom: 0.5rem;
+}
+.us_content{
+	margin-top: 0.5rem;
+	width: 70%;
+	margin-left: 15%;
+	font-size: 0.8rem;
+}
+.company_picture{
+	margin-top: 20px;
+	width: 70%;
+	margin-left: 15%;
+}
+.company_picture img{
+	width: 100%;
+	height: 100%;
+}
+.us_text{
+	margin-top: 20px;
+	width: 70%;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	margin-left: 15%;
+	text-align: center;
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+.company_producs{
+	width: 100%;
+	margin: 1rem 0;
+}
+.company_imga{
+	width: 100%;
+	text-align: center;
+}
+.company_imga img{
+	width: 30%;
+}
+.product_text{
+	margin-top: 20px;
+	width: 70%;
+	margin-left: 15%;
+	line-height: 1rem;
+	font-size: 0.8rem;
+}
+.products_list{
+	width: 70%;
+	margin-left: 15%;
+	
+}
+.products_list li{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+.left_img{
+	width: 25%;
+	height:4.05rem;
+}
+.left_img img{
+	width: 90%;
+	height: 100%;
+}
+.right_text{
+	width: 75%;
+}
+.linesa{
+	margin-top: 0.5rem;
+	width: 100%;
+	height: 4px;
+	border-bottom: 1px dashed #2D294C;
+	margin-bottom: 0.5rem;
+	
+}
+.products_name{
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+.products_contents{
+	font-size: 0.5rem;
+	color: #434343;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+.more_list{
+	position: absolute;
+	bottom: -0.5rem;
+	right: 0.5rem;
+	color: #2D294C;
+	font-size: 0.5rem;
+}
+.detail_content{
+	width: 80%;
+	margin-left: 10%;
+	display: flex;
+	flex-direction:row;
+	margin-top: 1rem;
+}
+.detail_img{
+	width: 50%;
+	text-align: right;
+	margin-right: 0.5rem;
+}
+.detail_img img{
+	width: 100%;
+	vertical-align: middle;
+}
+.detail_title{
+	width: 50%;
+	margin-left: 1rem;
+}
+.detail_top{
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+.detail_text{
+	font-size: 0.5rem;
+	color: #434343;
+	line-height: 1rem;
+}
+.functiom_use{
+	margin-top: 1rem;
+	width: 70%;
+	margin-left: 15%;
+}

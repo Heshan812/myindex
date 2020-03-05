@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../css/langdunkeji.css">
+		<title>公司产品</title>
+	</head>
+	<body>
+		<div class="index_content">
+			<div class="top_nav">
+				<div class="top_content">
+					<div class="top_logo">
+						<img src="../img/logo.png" alt="">
+					</div>
+					<div class="top_list">
+						<ul>
+							<li>
+								<a href="../index.html">首页</a>
+							</li>
+							<li>
+								<a href="../pc/about_us.html">关于我们</a>
+							</li>
+							<li>
+								<a href="../pc/company_product.html" class="active">公司产品</a>
+							</li>
+							<li>
+								<a href="../pc/contact_us.html">联系我们</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="company_producs">
+				<div class="company_imga">
+					<img src="../img/company_producsa.png" alt="">
+				</div>
+				<div class="lines"></div>
+				<div class="product_text">
+					<p>主要生产纱布口罩，一次性口罩，卫生口罩，防尘口罩，无纺布口罩 等。产品规格齐全，
+					质量稳定可靠。多年来，我们本着服务、品质、诚信等三大信念，并配合多年生产经验，
+					不断提高质量，产品项目亦不断推陈出新，优秀的品质造就了我们的成功。
+					</p>
+				</div>
+				<div class="lines"></div>
+				<div class="products_list">
+					<ul></ul>
+				</div>
+			</div>
+			<div class="html_bottom">
+				<div class="htmla">
+					<ul>
+						<li>
+							<img src="../img/img7.png" alt="">
+							<span>7x24小时</span>
+						</li>
+						<li>
+							<img src="../img/img6.png" alt="">
+							<span>专业化团队</span>
+						</li>
+						<li>
+							<img src="../img/img3.png" alt="">
+							<span>企业级SaaS</span>
+						</li>
+					</ul>
+				</div>
+				<div class="line"></div>
+				<div class="htmlb">
+					<div class="bottom_logo">
+						<img src="../img/logo1.png" >
+					</div>
+					<div class="small_title">
+						<span>关于我们</span>|
+						<span>服务协议</span>|
+						<span>隐私政策</span>|
+						<span>联系我们</span>|
+						<span>意见反馈</span>
+					</div>
+				</div>
+				<div class="htmlc">
+					<div class="ewm">
+						<img src="../img/ewm.png" alt="">
+					</div>
+					<div class="small_titlea">
+						<div class="titleone">反馈建议：123456789@163.com</div>
+						<div class="titleone">咨询热线：123456789</div>
+						<div class="titleone">联系地址：湖南省永州市双牌县</div>
+					</div>
+				</div>
+				<div class="htmld">
+					<div>Copyright © 2016-2019包图网信息科技有限公司 | 粤ICP备16096177号 深圳市市场监督管理局企业主体身份公示</div>
+				</div>
+			</div>
+		</div>	
+		<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">	
+			function company_list(){
+				var list=[
+					{img:"../img/company_producsb.png",id:1,title:"N95型口罩",text:"N95型口罩是NIOSH（美国国家职业安全卫生研究所，National Institute for Occupational Safety and Health） 认证的9种颗粒物防护口罩中的一种。N95不是特定的产品名称，只要符合N95标准，并且通过NIOSH审查的产品 就可以称为N95型口罩，可以对空气动力学直径0.075µm±0.020µm的颗粒的过滤效率达到95%以上。"},
+					{img:"http://a1.att.hudong.com/75/13/01300534138333137240136930537_s.jpg       ",id:2,title:"一次性口罩",text:"一次性口罩是用三层以上28克无纺布面料制作；鼻梁处采用环保型全塑条，不含任何金属，配带透气，舒适尤其适合电子类工厂，日常生活使用。一次性口罩（医用外科口罩）能在一定程度上预防呼吸道感染，无法防霾。购买时要注意，应当选择外包装上明确注明“医用外科口罩”字样的口罩"},
+					{img:"http://img.cn5135.com/uploads/Pic/2013/4/4/316763_201344234159718.jpg",id:3,title:"3M口罩",text:"3M防颗粒物口罩均使用3M专有高效过滤材料（聚丙烯材质），在满足过滤效率要求的同时，能保持较低的呼吸阻力，同时靠头带，或耳带，或颈带固定，并有金属鼻夹来帮助口罩和鼻梁位置的密合。"},
+					{img:"http://0.image.kw.okbuycdn.com/images/multipic/4/20180509/b2a14a1c58e2787de56a0c6755ff2981.jpg",id:4,title:"防尘口罩",text:"防尘口罩，是从事和接触粉尘的作业人员必不可少的防护用品。主要用于含有低浓度有害气体和蒸气的作业环境以及会产生粉尘的作业环境。滤毒盒内仅装吸附剂或吸着剂。有的滤毒盒还装有过滤层，可同时防气溶胶。有些军用防毒口罩，主要由活性炭布制成，或者用抗水抗油织物为外层，玻璃纤维过滤材料为内层，浸活性炭的聚氨酯泡沫塑料为底层，可在遭受毒气突然袭击时提供暂时性防护。"}
+				]
+				for(var lists of list){
+					var imga=lists.img;
+					var id=lists.id;
+					var title=lists.title;
+					var text=lists.text;
+					var li;
+					li="<li data_id='"+id+"' data_img='"+imga+"' data_title='"+title+"' data_text='"+text+"'>"+
+						"<div class='left_img'>"+
+							"<img src='"+imga+"'>"+
+						"</div>"+
+						"<div class='right_text'>"+
+							"<div class='products_name'>"+title+"</div>"+
+							"<div class='products_contents'>"+text+"</div>"+
+						"</div>"+
+						"<div class='more_list'>查看更多...</div>"+
+					"</li>"+
+					"<div class='linesa'></div>";
+					$(".products_list ul").append(li);
+					$(".products_list ul li").click(function(){
+						var img=$(this).attr("data_img");
+						var id=$(this).attr("data_id");
+						var title=$(this).attr("data_title");
+						var text=$(this).attr("data_text");
+						var t = encodeURI(encodeURI(title)); //需转码
+						var x= encodeURI(encodeURI(text)); //需转码
+						window.location.href="product_detail.html?id="+id+"&img="+img+"&title="+t+"&text="+x+" ";
+					});
+				}
+			}
+			company_list();
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../css/langdunkeji.css">
+		<title>产品详情</title>
+	</head>
+	<body>
+		<div class="index_content">
+			<div class="top_nav">
+				<div class="top_content">
+					<div class="top_logo">
+						<img src="../img/logo.png" alt="">
+					</div>
+					<div class="top_list">
+						<ul>
+							<li>
+								<a href="../index.html">首页</a>
+							</li>
+							<li>
+								<a href="../pc/about_us.html">关于我们</a>
+							</li>
+							<li>
+								<a href="../pc/company_product.html" class="active">公司产品</a>
+							</li>
+							<li>
+								<a href="../pc/contact_us.html">联系我们</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="content_us">
+				<div class='about_us_title'>
+					
+				</div>
+				<div class="detail_content">
+					<div class="detail_img">
+						<img src="" alt="">
+					</div>
+					<div class="detail_title">
+						<div class="detail_top"></div>
+						<div class="detail_text"></div>
+					</div>
+				</div>
+			</div>	
+			<div class="html_bottom">
+				<div class="htmla">
+					<ul>
+						<li>
+							<img src="../img/img7.png" alt="">
+							<span>7x24小时</span>
+						</li>
+						<li>
+							<img src="../img/img6.png" alt="">
+							<span>专业化团队</span>
+						</li>
+						<li>
+							<img src="../img/img3.png" alt="">
+							<span>企业级SaaS</span>
+						</li>
+					</ul>
+				</div>
+				<div class="line"></div>
+				<div class="htmlb">
+					<div class="bottom_logo">
+						<img src="../img/logo1.png" >
+					</div>
+					<div class="small_title">
+						<span>关于我们</span>|
+						<span>服务协议</span>|
+						<span>隐私政策</span>|
+						<span>联系我们</span>|
+						<span>意见反馈</span>
+					</div>
+				</div>
+				<div class="htmlc">
+					<div class="ewm">
+						<img src="../img/ewm.png" alt="">
+					</div>
+					<div class="small_titlea">
+						<div class="titleone">反馈建议：123456789@163.com</div>
+						<div class="titleone">咨询热线：123456789</div>
+						<div class="titleone">联系地址：湖南省永州市双牌县</div>
+					</div>
+				</div>
+				<div class="htmld">
+					<div>Copyright © 2016-2019包图网信息科技有限公司 | 粤ICP备16096177号 深圳市市场监督管理局企业主体身份公示</div>
+				</div>
+			</div>
+		</div>	
+		<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//截取链接的参数
+			(function ($) {
+			    $.getUrlParam = function (name) {
+			        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+			        var r = window.location.search.substr(1).match(reg);
+			        if (r != null) return unescape(r[2]); return null;
+			    }
+			})(jQuery);
+			var img= $.getUrlParam('img');		
+			var t =$.getUrlParam("title"); //此为中文参数，需转码
+			var title = decodeURI(t); //只需要转一次码 
+			var x=$.getUrlParam("text"); //此为中文参数，需转码
+			var text = decodeURI(x); //只需要转一次码 
+			$(".detail_img img").attr("src",img);
+			$(".detail_top").text(title);
+			$(".detail_text").text(text);
+		</script>
+	</body>
+</html>
